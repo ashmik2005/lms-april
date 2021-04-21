@@ -1,0 +1,53 @@
+<%- include('../partials/header'); -%>
+<body>
+  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top ">
+      <a class="navbar-brand text-dark"  href="/">
+         Library Management System | Welcome | CS331 Project
+      </a>
+     
+      </button>
+  </nav>
+<br>
+ <%- include('../partials/alerts'); -%>
+
+<section id="userLoginForm">
+
+  <div class="container my-5" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
+    <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)">
+        <h1 class="display-4 text-light">Welcome User,</h1>
+        <h1 class="display-4 text-warning"><strong>Log-In</strong></h1>
+            <br><p class="lead text-center ">Please enter your id and password </p>
+                              
+                  <div class="row" data-aos-delay="800" data-aos-duration="1500" data-aos-easing="ease-in-out"  data-aos="fade-right">
+                    <div class="col-md-6 offset-md-3">
+                      <div class="card bg-transparent">
+                          <div class="card-block">
+                            <form class="p-3" action="/auth/user-login" method="POST">
+                              <div class="form-group">
+                                <label class="form-control-label">Username</label>
+                                <input type="text" name="username" placeholder="Username" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label class="form-control-label">Password</label>
+                                <input type="password" name="password" placeholder="Password" class="form-control">
+                              </div>
+                              <div class="text-center">
+                                <button type="submit" class="btn btn-success  "><strong>Log-In</strong></button>
+                              </div>  
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    
+    
+</div>
+
+   
+  
+
+</section>
+
+<br>
+<%- include('../partials/footer');  -%>

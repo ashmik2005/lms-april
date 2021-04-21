@@ -1,0 +1,83 @@
+<%- include('../partials/header'); -%>
+<body>
+  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top ">
+      <a class="navbar-brand text-dark"  href="/">
+         Library Management System | Welcome | CS331 Project
+      </a>
+     
+      </button>
+  </nav>
+<br>
+<section id="usersignUpForm">
+<div class="container my-5" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="2000">
+  <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)">
+                
+    <h1 class="display-4 text-light">Welcome User,</h1>
+        <h1 class="display-4 text-warning"><strong>Sign Up</strong></h1>
+            <br><p class="lead text-center ">Please enter correct credentials </p>
+                    
+    <div class="row"  data-aos-delay="800" data-aos-duration="1500" data-aos-easing="ease-in-out"  data-aos="fade-right">
+                  <div class="col-md-6 offset-md-3">
+                    <div class="card bg-transparent">
+                     
+                        <div class="card-block">
+                          <form class="p-3" action="/auth/user-signUp" method="POST">
+                              
+                            <div class="form-group">
+                              <label class="form-control-label">First Name</label>
+                              <input type="text" name="firstName" placeholder="firstName" class="form-control" required>
+                            </div>
+                            
+                             <div class="form-group">
+                              <label class="form-control-label">Last Name</label>
+                              <input type="text" name="lastName" placeholder="lastName" class="form-control" required>
+                            </div>
+                              
+                            <div class="form-group">
+                              <label class="form-control-label">Pick a username</label>
+                              <input type="text" name="username" placeholder="Username" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label class="form-control-label">Email</label>
+                              <input type="email" name="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label class="form-control-label">Password</label>
+                              <input type="password" name="password" placeholder="Password" class="form-control" required>
+                            </div>
+                            
+                             <div class="form-group">
+                              <label class="form-control-label">Gender</label>
+                              <select name="gender" class="form-control" >
+                                <option name="male">Male</option>
+                                <option name="female">Female</option>
+                                <option name="others">Others</option>
+                              </select>
+                            </div>
+                            
+                             <div class="form-group">
+                              <label class="form-control-label">Address</label>
+                              <input type="text" name="address" placeholder="Address" class="form-control" required>
+                            </div>
+                            
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-danger "><strong>Sign Up</strong></button>
+                            </div>  
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+               
+
+      </div>
+  
+</div>
+</section>
+
+
+<%- include('../partials/footer'); -%>
